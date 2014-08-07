@@ -20,10 +20,10 @@ Categories:
 Help-Topics:
   - "TBD"
 Cart-Data:
-  - Key: "username"
+  - Key: username
     Type: cart_data
     Description: "Admin user"
-  - Key: "password"
+  - Key: password
     Type: cart_data
     Description: "Password for admin user"
   - Key: database_name
