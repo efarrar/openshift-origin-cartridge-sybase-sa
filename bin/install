@@ -18,8 +18,8 @@ chmod 0700 $OPENSHIFT_SA_DIR/data
 
 env_dir="${OPENSHIFT_SA_DIR}/env"
 SA_DB_NAME=demo
-SA_USERNAME=dba
-SA_PASSWORD=sql
+SA_USERNAME=$(generate_username)
+SA_PASSWORD=$(generate_password)
 set_env_var 'SA_DB_NAME' ${SA_DB_NAME} $env_dir
 set_env_var 'SA_USERNAME' ${SA_USERNAME} $env_dir
 set_env_var 'SA_PASSWORD' ${SA_PASSWORD} $env_dir
