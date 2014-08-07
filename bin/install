@@ -51,7 +51,7 @@ client_result "DB Port: ${OPENSHIFT_SA_DB_PORT}"
 client_result "============================="
 client_result ""
 
-cart_props "user=${SA_USERNAME}"
+cart_props "username=${SA_USERNAME}"
 cart_props "password=${SA_PASSWORD}"
 cart_props "database_name=${SA_DB_NAME}"
 cart_props "sa_db_host=${OPENSHIFT_SA_DB_HOST}"
