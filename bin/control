@@ -21,7 +21,7 @@ return 0
 }
 
 function _start_sa {
-  dbspawn dbsrv16 -n ${SA_DB_NAME} -x tcpip{MyIP=${OPENSHIFT_SA_DB_HOST}\;port=${OPENSHIFT_SA_DB_PORT}} $OPENSHIFT_SA_DIR/data/sqa.db -n ${SA_DB_NAME}
+  dbspawn dbsrv16 -n ${SA_DB_NAME} -oe ${OPENSHIFT_LOG_DIR}sa-startup.log -o ${OPENSHIFT_LOG_DIR}sa.log -on 10m -x tcpip{MyIP=${OPENSHIFT_SA_DB_HOST}\;port=${OPENSHIFT_SA_DB_PORT}} $OPENSHIFT_SA_DIR/data/sqa.db -n ${SA_DB_NAME}
 }
 
 function _stop_sa {
